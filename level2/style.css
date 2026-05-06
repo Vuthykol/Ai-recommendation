@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 60px;
+    align-items: center;
+    width: fit-content;
+    margin: auto ;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    border: 1vh solid blue;
+    border-radius: 12px;
+}
+@media (min-width: 576px) {
+    .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    [class^="box-"]{
+        width: 50px;
+    }
+}

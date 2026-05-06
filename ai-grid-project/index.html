@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Guide</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-logo">AI <span>Recommendation</span></div>
+    <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#compare">Compare</a></li>
+        <li><a href="#tips" class="btn-tips">Tips</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle sidebar">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+<aside id="sidebar">
+    <button class="sidebar-close" id="sidebar-close" aria-label="Close sidebar">✕</button>
+    <p class="aside-title">🤖 AI Tools</p>
+
+    <a class="ai-card" href="https://chat.openai.com" target="_blank">
+        <div class="ai-card-header">
+            <div class="ai-icon"><img src="../ai-grid-project/pics/ChatGPT-Logo.png" alt="ChatGPT"></div>
+            <div>
+                <div class="ai-card-name">ChatGPT</div>
+                <div class="ai-card-tag">by OpenAI</div>
+            </div>
+        </div>
+        <p class="ai-card-desc">Best for essays, coding, and general questions.</p>
+    </a>
+
+    <a class="ai-card" href="https://claude.ai" target="_blank">
+        <div class="ai-card-header">
+            <div class="ai-icon"><img src="../ai-grid-project/pics/claude-ai-logo-rounded-hd-free-png.webp" alt="Claude"></div>
+            <div>
+                <div class="ai-card-name">Claude</div>
+                <div class="ai-card-tag">by Anthropic</div>
+            </div>
+        </div>
+        <p class="ai-card-desc">Best for long documents and analysis.</p>
+    </a>
+
+    <a class="ai-card" href="https://www.bing.com/chat" target="_blank">
+        <div class="ai-card-header">
+            <div class="ai-icon"><img src="../ai-grid-project/pics/Bing-Chat-Logo.jpg" alt="Bing AI" style="object-fit: cover;"></div>
+            <div>
+                <div class="ai-card-name">Bing AI</div>
+                <div class="ai-card-tag">by Microsoft</div>
+            </div>
+        </div>
+        <p class="ai-card-desc">Best for web research.</p>
+    </a>
+
+    <a class="ai-card" href="https://gemini.google.com" target="_blank">
+        <div class="ai-card-header">
+            <div class="ai-icon"><img src="../ai-grid-project/pics/Gemini-logo.png" alt="Gemini"></div>
+            <div>
+                <div class="ai-card-name">Gemini</div>
+                <div class="ai-card-tag">by Google</div>
+            </div>
+        </div>
+        <p class="ai-card-desc">Best for Google tools.</p>
+    </a>
+</aside>
+
+<main>
+    <div class="hero">
+        <span class="hero-eyebrow"> For Students in Cambodia</span>
+        <h1>Find the <em>Right AI</em><br>for Your Studies</h1>
+        <p class="hero-sub">Compare top AI tools and choose what fits your needs.</p>
+    </div>
+
+    <div class="compare-section">
+        <h2 class="section-title" id="compare">📊 Quick Comparison</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>ChatGPT</th>
+                        <th>Claude</th>
+                        <th>Bing AI</th>
+                        <th>Gemini</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Free</td><td><span class="badge-check">✓</span></td><td><span class="badge-check">✓</span></td><td><span class="badge-check">✓</span></td><td><span class="badge-check">✓</span></td></tr>
+                    <tr><td>Web Search</td><td><span class="badge-warn">!</span></td><td><span class="badge-check">✓</span></td><td><span class="badge-check">✓</span></td><td><span class="badge-check">✓</span></td></tr>
+                    <tr><td>Coding</td><td><span class="badge-check">✓</span></td><td><span class="badge-check">✓</span></td><td><span class="badge-no">✕</span></td><td><span class="badge-warn">!</span></td></tr>
+                    <tr><td>Long Docs</td><td><span class="badge-warn">!</span></td><td><span class="badge-check">✓</span></td><td><span class="badge-no">✕</span></td><td><span class="badge-warn">!</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="use-cases">
+        <div class="use-card"><div class="use-icon">📝</div><h3>Essays</h3><span>ChatGPT</span></div>
+        <div class="use-card"><div class="use-icon">📄</div><h3>Documents</h3><span>Claude</span></div>
+        <div class="use-card"><div class="use-icon">🔍</div><h3>Research</h3><span>Bing AI</span></div>
+        <div class="use-card"><div class="use-icon">💻</div><h3>Coding</h3><span>ChatGPT</span></div>
+    </div>
+    <div class="tips-section" id="tips">
+    <h2 class="section-title"> Tips for Using AI</h2>
+    <div class="tips-grid">
+        <div class="tip-card">Be specific in your prompts</div>
+        <div class="tip-card">Always fact-check AI answers</div>
+        <div class="tip-card">Use Claude for long documents</div>
+        <div class="tip-card">Use Bing AI for current news</div>
+    </div>
+</div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">AI<span>Guide</span></div>
+        <p class="footer-text">Helping students choose the right AI tools.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
